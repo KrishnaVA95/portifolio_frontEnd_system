@@ -1,0 +1,72 @@
+@use "../../scss/abstracts/" as *;
+
+
+.container{
+
+    background: transparent;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 2;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    
+    .myPreview{
+        max-width: 800px;
+        padding:60px  0 0 20px ;
+        // padding-top: 60px;
+        h2{
+            color: $color-grey-1000;
+            @include  text-style-Titles;
+        }
+        span{
+            color: $color-socialLinkedin;
+            @include  text-style-Titles;
+        }
+        p{
+            @include text-style-paragraph-2;
+            color: $color-grey-600;
+        }
+    }
+
+    .containerBtns{
+        max-width: 800px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+
+
+@media(min-width: 1200px){
+    .container{
+        display: flex;
+        .containerInfo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around; 
+        }
+        .containerImage{
+            background-image: url(../../public/static/img/background/header-bg.svg) ;
+            background-attachment:fixed;
+            background-position: right;
+            z-index: 2;
+            background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 550px;
+            padding: 12rem 0 8rem 0;
+        }
+    }
+}
+
+
+@media(min-width: 1350px){
+    .containerInfo{
+        padding-left: 15vw;
+    }
+}

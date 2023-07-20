@@ -1,0 +1,22 @@
+@use "../../scss/abstracts/" as *;
+
+.container{
+    display: flex;
+    padding: 20px;
+    list-style: none;
+    gap: 30px;
+    overflow-x: auto;
+
+    li{
+        margin:  15px 0;
+        min-width: 120px;
+    }
+} 
+
+@media(min-width: 800px){
+    .container{
+        flex-wrap: wrap;
+        max-width: 800px;
+        padding: 40px;
+    }
+}
