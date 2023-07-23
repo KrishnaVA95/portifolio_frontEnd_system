@@ -1,0 +1,84 @@
+@use "../../scss/abstracts/" as *;
+
+.container{
+    padding: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: auto;
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2{
+            color: $color-grey-1000;
+            @include  text-style-Titles;
+        }
+        span{
+            color: $color-socialLinkedin;
+            @include  text-style-Titles;
+        }
+        p{
+            @include text-style-paragraph-2;
+            color: $color-grey-600;
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        li{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 350px;
+            height: 130px;
+            span{
+                width: 60px;
+                height: 60px;
+                margin: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+            }
+            .containerWhatsapp{
+                @include effect-style-linear-whatsapp;
+            }
+            .containerEmail{
+                @include effect-style-linear-email;
+            }
+            .containerLinkedin{
+                @include effect-style-linear-linkedin;
+            }
+
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+
+                a{
+                    color: $color-primary-500;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+} 
+
+
+@media(min-width: 800px){
+    .container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

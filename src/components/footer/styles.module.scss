@@ -1,0 +1,48 @@
+@use "../../scss/abstracts/" as *;
+
+
+.container{
+    height: 40vh;
+    width: 100vw;
+    background-color: $color-secundary-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid $color-primary-500;
+    ul{
+        display: flex;
+        li{
+            width: 60px;
+            height: 60px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+        }
+        .containerWhatsapp{
+            @include effect-style-linear-whatsapp;
+        }
+        .containerEmail{
+            @include effect-style-linear-email;
+        }
+        .containerLinkedin{
+            @include effect-style-linear-linkedin;
+        }
+    }
+
+    .containerCredits{
+        padding-top: 15px;
+        color: $color-grey-500;
+        @include text-style-paragraph-1;
+        text-align: center;
+    }
+}
+
+@media(min-width: 800px){
+    .container{
+        height: 30vh;
+        flex-direction: row;
+    }
+}

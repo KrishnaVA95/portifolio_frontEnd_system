@@ -1,0 +1,8 @@
+@use "../../../scss/abstracts/" as *;
+
+.container{
+    width: 350px;
+    min-width: 350px;
+    height: 190px;
+    background: $color-secundary-background;
+}
