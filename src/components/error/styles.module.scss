@@ -1,0 +1,24 @@
+@use "../../scss/abstracts/" as *;
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    h2{
+        @include text-style-Titles;
+        letter-spacing: 4px;
+        color: $color-primary-200;
+    }
+
+    button{
+        outline: none;
+        background-color: transparent;
+        padding: 20px;
+        
+    }
+}
