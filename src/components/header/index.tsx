@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from 'next/image'
 import logo from '@/public/static/img/logo/Logo_Branco_Krishna.png'
-import useMedia from 'use-media';
+// import useMedia from 'use-media';
 import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import Link from "next/link"
