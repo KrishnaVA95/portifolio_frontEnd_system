@@ -1,8 +1,93 @@
 @use "../../../scss/abstracts/" as *;
 
 .container{
-    width: 350px;
-    min-width: 350px;
-    height: 190px;
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: 
+    inset 5px 5px 5px rgba(0,0,0,0.2),
+    inset -5px -5px 15px rgba(255,255,255,0.1),
+    5px 5px 15px rgba(0,0,0,0.3),
+    -5px -5px 15px  rgba(255,255,255,0.1);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.1);
+}
+
+
+
+.box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
     background: $color-secundary-background;
+    // background: #2a2b2f;
+    border: 2px solid #1e1f23;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.box:hover{
+    transform:  translateY(-50px);
+    box-shadow: 0 40px 70px rgba(0,0,0,0.5);
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.05);
+}
+
+
+
+.content{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    gap: 5px;
+    h3{
+        @include text-style-Titles;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.description{
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    
+}
+
+.primaryTech{
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
