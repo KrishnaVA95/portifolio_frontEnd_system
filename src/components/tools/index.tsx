@@ -19,6 +19,17 @@ export default function ContainerTools() {
             <li className={styles.containerTool}>
                 <div className={styles.box}>
                     <div className={styles.content}>
+                        <FaNode size={100} style={{
+                            color:  "#ADB5BD",
+                            margin: "0"
+                        }}/>
+                    </div>
+                </div>
+                <span className={styles.toolName}>Node.js</span>
+            </li>
+            <li className={styles.containerTool}>
+                <div className={styles.box}>
+                    <div className={styles.content}>
                         <FaReact size={100} style={{
                             color:  "#ADB5BD",
                             margin: "0"
@@ -60,17 +71,7 @@ export default function ContainerTools() {
                 </div>
                 <span className={styles.toolName}>TS</span>
             </li>
-            <li className={styles.containerTool}>
-                <div className={styles.box}>
-                    <div className={styles.content}>
-                        <FaNode size={100} style={{
-                            color:  "#ADB5BD",
-                            margin: "0"
-                        }}/>
-                    </div>
-                </div>
-                <span className={styles.toolName}>Node.js</span>
-            </li>
+
             <li className={styles.containerTool}>
                 <div className={styles.box}>
                     <div className={styles.content}>

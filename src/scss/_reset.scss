@@ -1,5 +1,5 @@
 @use "./abstracts" as *;
-
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Poppins:wght@300;500&display=swap');
 
 :root {
   font-size: 60%;
@@ -16,6 +16,7 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body,
@@ -57,6 +58,7 @@ h5,
 h6,
 strong {
   font-weight: 500;
+  // font-family: 'Mrs Saint Delafield', cursive;
 }
 
 button {

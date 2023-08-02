@@ -63,12 +63,12 @@ export default async function ProjectDetail({ params }: IPageProps){
                 ))} 
             </ul>
 
-            <ul className={styles.containerCredits}>
+            {/* <ul className={styles.containerCredits}>
                 <h3>Credits</h3>
                 {project.credits == null ? <></> : project.credits.map((paragraph: string ) =>(
                     <li key={paragraph.slice(0, 15)}>{paragraph}</li> 
                 ))} 
-            </ul>
+            </ul> */}
         </div>
         <Footer/>
         </>

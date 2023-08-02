@@ -31,7 +31,7 @@ export default function ContainerContact() {
                 </span>
                 <div>
                     <h3>My Email</h3>
-                    <Link href={`mailto:${userData.emailUser}`}>Ir para conversa</Link>
+                    <Link href={`mailto:${userData.emailUser}`}>Enviar email</Link>
                 </div>
             </li>
             <li>
@@ -42,7 +42,7 @@ export default function ContainerContact() {
                 </span>
                 <div>
                     <h3>My Linkedin</h3>
-                    <Link href='https://www.linkedin.com/in/krishnavarela/' target="blank">Ir para conversa</Link>
+                    <Link href='https://www.linkedin.com/in/krishnavarela/' target="blank">Acessar</Link>
                 </div>
             </li>
         </ul>

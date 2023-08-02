@@ -2,7 +2,6 @@ import { api } from "@/services/api";
 import styles from "./styles.module.scss"
 import CardProject from "./cardProject";
 
-
 interface ITech{
     id: number;
     name: string;
@@ -32,16 +31,17 @@ export interface IProject {
     created_at: string;
 }
 
-interface IResponseGetProjects{
+export interface IResponseGetProjects{
     count: number;
     next: string | null;
     previous: string | null;
     results: IProject[];
 }
 
-async function getProjects(n: number) {
+export async function getProjects(n: number) {
     try {
-        const response = await api.get<[IResponseGetProjects]>(`/api/projects/?page=${n}`)
+        const response = await api.get<IResponseGetProjects>(`/api/projects/?page=${n}`)
+        // console.log(response.data)
 
         return response.data
     } catch (error) {
@@ -52,18 +52,18 @@ async function getProjects(n: number) {
 
 export default async function ShowcaseFlex(){
     const data = await getProjects(1)
-    // const [projects, setProjects] = useState<IProject[]>(data.results);
     const projects : IProject[] = data.results
-    // const numberProjects = data.count
-    // const numberPages = Math.ceil(numberProjects / 3);
-    // const nextPage = data.next
-    // const previousPage = data.previous
+    const nextPage = data.next
+    const previousPage = data.previous
     return(
-        <ul className={styles.container}>
-            {projects.map((project: IProject ) =>(
-             <CardProject key={project.id} project={project}/>    
-            ))}
-        </ul>
+        <>
+            <ul className={styles.container}>
+                {projects.map((project: IProject ) =>(
+                <CardProject key={project.id} project={project}/>    
+                ))}
+            </ul>
+            {/* <Pagination nextPage={nextPage} previousPage={previousPage} /> */}
+        </>
 
     ) 
         

@@ -2,6 +2,7 @@ import HexGridBackGround from '@/components/backgroundGrid/backGroundGrid'
 import type { Metadata } from 'next'
 import '@/scss/main.scss'
 import { Inter } from 'next/font/google'
+import NavBar from '@/components/header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <HexGridBackGround>
+          <NavBar/>
           {children}
         </HexGridBackGround>
       </body>

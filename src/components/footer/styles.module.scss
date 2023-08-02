@@ -40,10 +40,12 @@
     .my{
         display: flex;
         gap: 15px;
+        padding: 10px;
     }
 
     .containerCredits{
         padding-top: 15px;
+        padding-bottom: 15px;
         p{
 
             color: $color-grey-500;

@@ -5,7 +5,7 @@
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     height: 100vh;
@@ -18,10 +18,10 @@
         h2{
             color: $color-grey-1000;
             @include  text-style-Titles;
-        }
-        span{
-            color: $color-socialLinkedin;
-            @include  text-style-Titles;
+            span{
+                @include  text-style-Titles;
+                color: $color-primary-focus;
+            }
         }
         p{
             @include text-style-paragraph-2;

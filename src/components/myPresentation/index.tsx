@@ -26,7 +26,7 @@ export default function MyPresentation() {
                       </span>
                       , seja bem vindo
                     </h2>
-                    <h2>Eu sou, <span>Krishna Varela</span></h2>
+                    <h2>Eu sou, <span>Krishna</span></h2>
                     <h2>Desenvolvedor web, <span>Full-Stack</span></h2>
                     <p>Conheça aqui neste ambiente, criado especialmente para você, todos os meus projetos e tecnologias</p>
                   </div>
