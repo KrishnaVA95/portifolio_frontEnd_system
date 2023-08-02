@@ -4,7 +4,7 @@ import styles from "./styles.module.scss"
 import { IProject } from "@/components/showcaseFlex"
 import BtnAnchorStyleNeon from "@/components/buttons/btnAnchor"
 import ContainerVideo from "@/components/containerVideo"
-import TollCard from "@/components/tools/tollCard"
+import ToolCard from "@/components/tools/toolCard"
 import Footer from "@/components/footer"
 
 interface IPageProps{
@@ -35,7 +35,7 @@ export default async function ProjectDetail({ params }: IPageProps){
                 <h1>{project.title}</h1>
                 <ul className={styles.containerTech}>
                     {project.technologies.map((tech: ITech ) =>(
-                    <TollCard key={tech.id} techName={tech.name}/>    
+                    <ToolCard key={tech.id} techName={tech.name}/>    
                     ))}
                 </ul>
             </header>

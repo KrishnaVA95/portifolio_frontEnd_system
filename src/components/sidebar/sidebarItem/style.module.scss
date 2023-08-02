@@ -1,0 +1,28 @@
+@use "../../../scss/abstracts/" as *;
+
+.container{
+    width: 270px;
+    height: 30px;
+    box-shadow: 
+    inset 5px 5px 5px rgba(0,0,0,0.2),
+    inset -5px -5px 15px rgba(255,255,255,0.1),
+    5px 5px 15px rgba(0,0,0,0.3),
+    -5px -5px 15px  rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    background-color: #1A202C; 
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 15px 20px;
+    color: #fff;
+
+    svg{
+        margin: 0 20px;
+    }
+}
+
+.container:hover{
+    background-color: black;
+}

@@ -3,7 +3,7 @@
 
 .container{
 
-    background: transparent;
+    // background: transparent;
     justify-content: space-between;
     height: 100vh;
     width: 100vw;
@@ -16,13 +16,14 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
     
     .myPreview{
         max-width: 800px;
-        padding:100px  0 0 20px ;
-        // padding-top: 60px;
+        padding:7vh  0 0 20px ;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
         h2{
             color: $color-grey-1000;
             @include  text-style-Titles;
@@ -30,6 +31,7 @@
         span{
             color: $color-socialLinkedin;
             @include  text-style-Titles;
+            padding-left: 15px; 
         }
         p{
             @include text-style-paragraph-2;
@@ -56,6 +58,7 @@
 
 
 
+
 @media(min-width: 1200px){
     .container{
         display: flex;
@@ -64,6 +67,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-around; 
+        }
+        .myPreview{
+            padding:12vh  0 0 20px ;
         }
         .containerImage{
             background-image: url(../../public/static/img/background/header-bg.svg) ;
@@ -84,4 +90,8 @@
     .containerInfo{
         padding-left: 15vw;
     }
+
+    // .myPreview{
+    //     padding:10vh  0 0 20px ;
+    // }
 }

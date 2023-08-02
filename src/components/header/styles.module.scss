@@ -1,52 +1,27 @@
-// @use "../../scss/abstracts/" as *;
+@use "../../scss/abstracts/" as *;
 
+.container{
+    // position: fixed;
+    height: 6.6vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: #1A202C; 
 
-// .containerNavbar{
-//     height: 7vh;
-//     width: 100vw;
-//     background-color: $color-secundary-background;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 0 20px;
-//     position: fixed;
-//     @include effect-style-shadow-NEON();
-//     z-index: 100;
+    box-shadow: 0 0 20px 3px;
 
-// }
-
-// .containerNavlist{
-//     position: absolute;
-//     top: 7vh;
-//     left: 0;
-//     width: 100vw;
-//     height: 93vh;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     align-items: center;
-//     background-color: $color-secundary-background;
-//     z-index: 100;
-//     a{
-//         @include text-style-paragraph-2;
-//         color: $color-grey-1000;
-//         padding: 30px;
-//     }
-// }
-
-
-// @media(min-width: 999px){
-//     .containerNavbar{
-//         padding: 0 40px;
-//     }
-//     .containerNavlist{
-//         position: relative;
-//         background-color: transparent;
-//         flex-direction: row;
-//         width: auto;
-//         height: auto;
-//         top: 0;
-//         gap: 40px;
-//         padding-right: 0 40px;
-//     }
-// }
+    a{        
+      // position: fixed;
+      margin-right: 32px;
+    }
+    > svg {
+        // position: fixed;
+        color: white;
+        width: 22px;
+        height: 22px;
+        margin-left: 32px;
+        cursor: pointer;
+        // z-index: 10009;
+      }
+}

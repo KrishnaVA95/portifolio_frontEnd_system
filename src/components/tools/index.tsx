@@ -16,82 +16,126 @@ export default function ContainerTools() {
     return (
 
         <ul className={styles.container}>
-            <li>
-                <FaReact size={100} style={{
-                        color:  "#ADB5BD",
-                        cursor: 'pointer',
-                        margin: "0"
-                }}/>
+            <li className={styles.containerTool}>
+                <div className={styles.box}>
+                    <div className={styles.content}>
+                        <FaReact size={100} style={{
+                            color:  "#ADB5BD",
+                            margin: "0"
+                        }}/>
+                    </div>
+                </div>
+                <span className={styles.toolName}>React</span>
             </li>
-            <li>
-                <TbBrandNextjs size={100} style={{
-                        color:  "#ADB5BD",
-                        cursor: 'pointer',
-                        margin: "0"
-                }}/>
+            <li className={styles.containerTool}>
+                <div className={styles.box}>
+                    <div className={styles.content}>
+                        <TbBrandNextjs size={100} style={{
+                            color:  "#ADB5BD",
+                            margin: "0"
+                        }}/>
+                    </div>
+                </div>
+                <span className={styles.toolName}>Next.js</span>
             </li>
-            <li>
-                <FaJs size={100} style={{
-                        color:  "#ADB5BD",
-                        cursor: 'pointer',
-                        margin: "0"
-                }}/>
+            <li className={styles.containerTool}>
+                <div className={styles.box}>
+                    <div className={styles.content}>
+                        <FaJs size={100} style={{
+                            color:  "#ADB5BD",
+                            margin: "0"
+                        }}/>
+                    </div>
+                </div>
+                <span className={styles.toolName}>JS</span>
             </li>
-            <li>
-                <SiTypescript size={100} style={{
-                        color:  "#ADB5BD",
-                        cursor: 'pointer',
-                        margin: "0"
-                }}/>
+            <li className={styles.containerTool}>
+                <div className={styles.box}>
+                    <div className={styles.content}>
+                        <SiTypescript size={100} style={{
+                            color:  "#ADB5BD",
+                            margin: "0"
+                        }}/>
+                    </div>
+                </div>
+                <span className={styles.toolName}>TS</span>
             </li>
-            <li>
-                <FaNode size={100} style={{
-                        color:  "#ADB5BD",
-                        cursor: 'pointer',
-                        margin: "0"
-                }}/>
+            <li className={styles.containerTool}>
+                <div className={styles.box}>
+                    <div className={styles.content}>
+                        <FaNode size={100} style={{
+                            color:  "#ADB5BD",
+                            margin: "0"
+                        }}/>
+                    </div>
+                </div>
+                <span className={styles.toolName}>Node.js</span>
             </li>
-            <li>
-                <FaPython size={100} style={{
-                        color:  "#ADB5BD",
-                        cursor: 'pointer',
-                        margin: "0"
-                }}/>
+            <li className={styles.containerTool}>
+                <div className={styles.box}>
+                    <div className={styles.content}>
+                        <FaPython size={100} style={{
+                            color:  "#ADB5BD",
+                            margin: "0"
+                        }}/>
+                    </div>
+                </div>
+                <span className={styles.toolName}>Python</span>
             </li>
-            <li>
-                <SiPostgresql size={100} style={{
-                        color:  "#ADB5BD",
-                        cursor: 'pointer',
-                        margin: "0"
-                }}/>
+            <li className={styles.containerTool}>
+                <div className={styles.box}>
+                    <div className={styles.content}>
+                        <SiPostgresql size={100} style={{
+                            color:  "#ADB5BD",
+                            margin: "0"
+                        }}/>
+                    </div>
+                </div>
+                <span className={styles.toolName}>PSQL</span>
             </li>
-            <li>
-                <FaGit size={100} style={{
-                        color:  "#ADB5BD",
-                        cursor: 'pointer',
-                        margin: "0"
-                }}/>
+            <li className={styles.containerTool}>
+                <div className={styles.box}>
+                    <div className={styles.content}>
+                        <FaGit size={100} style={{
+                            color:  "#ADB5BD",
+                            margin: "0"
+                        }}/>
+                    </div>
+                </div>
+                <span className={styles.toolName}>Git</span>
             </li>
-            <li>
-                <FaHtml5 size={100} style={{
-                        color:  "#ADB5BD",
-                        cursor: 'pointer',
-                        margin: "0"
-                }}/>
+            <li className={styles.containerTool}>
+                <div className={styles.box}>
+                    <div className={styles.content}>
+                        <FaHtml5 size={100} style={{
+                            color:  "#ADB5BD",
+                            margin: "0"
+                        }}/>
+                    </div>
+                </div>
+                <span className={styles.toolName}>HTML5</span>
             </li>
-            <li>
-                <FaCss3Alt size={100} style={{
-                        color:  "#ADB5BD",
-                        cursor: 'pointer',
-                        margin: "0"
-                }}/>
+            <li className={styles.containerTool}>
+                <div className={styles.box}>
+                    <div className={styles.content}>
+                        <FaCss3Alt size={100} style={{
+                            color:  "#ADB5BD",
+                            margin: "0"
+                        }}/>
+                    </div>
+                </div>
+                <span className={styles.toolName}>CSS3</span>
             </li>
-            <li>
-                <FaSass size={100} style={{
-                        color:  "#ADB5BD",
-                        cursor: 'pointer',
-                        margin: "0"
-                }}/>
+            <li className={styles.containerTool}>
+                <div className={styles.box}>
+                    <div className={styles.content}>
+                        <FaSass size={100} style={{
+                            color:  "#ADB5BD",
+                            margin: "0"
+                        }}/>
+                    </div>
+                </div>
+                <span className={styles.toolName}>Sass</span>
             </li>
         </ul>
     )

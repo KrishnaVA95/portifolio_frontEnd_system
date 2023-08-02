@@ -44,7 +44,6 @@ export default function MyPresentation() {
                   </div>
                 </div>
                 <article>
-                  <h3>Tecnologias</h3>
                   <ContainerTools/>
                 </article>
             </div>

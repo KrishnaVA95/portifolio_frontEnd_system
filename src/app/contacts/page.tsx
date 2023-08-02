@@ -1,7 +1,7 @@
 // 'use client'
 import ContainerContact from "@/components/contact";
 import Footer from "@/components/footer";
-// import NavBar from "@/components/header";
+import NavBar from "@/components/header";
 
 
 
@@ -9,7 +9,7 @@ export default function Contact() {
 
     return (
       <main>
-        {/* <NavBar/> */}
+        <NavBar/>
         <ContainerContact/>
         <Footer/>
       </main>

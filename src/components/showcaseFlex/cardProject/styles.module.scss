@@ -58,12 +58,12 @@
 
 
 .content{
-    padding: 15px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 80px;
     gap: 5px;
     h3{
         @include text-style-Titles;
@@ -88,6 +88,6 @@
 
 .primaryTech{
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: -20px;
+    right: -5px;
 }

@@ -39,9 +39,9 @@ interface IResponseGetProjects{
     results: IProject[];
 }
 
-async function getProjects() {
+async function getProjects(n: number) {
     try {
-        const response = await api.get<[IResponseGetProjects]>('/api/projects/')
+        const response = await api.get<[IResponseGetProjects]>(`/api/projects/?page=${n}`)
 
         return response.data
     } catch (error) {
@@ -51,9 +51,13 @@ async function getProjects() {
 }
 
 export default async function ShowcaseFlex(){
-    const data = await getProjects()
-    const projects = data.results
-    
+    const data = await getProjects(1)
+    // const [projects, setProjects] = useState<IProject[]>(data.results);
+    const projects : IProject[] = data.results
+    // const numberProjects = data.count
+    // const numberPages = Math.ceil(numberProjects / 3);
+    // const nextPage = data.next
+    // const previousPage = data.previous
     return(
         <ul className={styles.container}>
             {projects.map((project: IProject ) =>(

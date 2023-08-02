@@ -12,12 +12,12 @@ import {
   } from "react-icons/fa";
 
 
-interface ITollCard {
+interface IToolCard {
     techName: string;
     specificCase?: boolean;
 }
 
-export default function TollCard({ techName, specificCase }: ITollCard){
+export default function ToolCard({ techName, specificCase }: IToolCard){
 
     if(techName == 'Python' && specificCase == true){
         return(
@@ -39,7 +39,7 @@ export default function TollCard({ techName, specificCase }: ITollCard){
                 }}/>     
             </li>
         )        
-    }else if (techName == 'PSQL' &&  specificCase == true){
+    }else if (techName == 'PostegreSQL' &&  specificCase == true){
         return(
             <li>
                 <SiPostgresql size={200} style={{
@@ -49,7 +49,7 @@ export default function TollCard({ techName, specificCase }: ITollCard){
                 }}/>     
             </li>
         )        
-    }else if (techName == 'PSQL'){
+    }else if (techName == 'PostegreSQL'){
         return(
             <li>
                 <SiPostgresql size={35} style={{
