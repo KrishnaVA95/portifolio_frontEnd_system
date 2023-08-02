@@ -38,9 +38,9 @@ export interface IResponseGetProjects{
     results: IProject[];
 }
 
-export async function getProjects(n: number) {
+export async function getProjects() {
     try {
-        const response = await api.get<IResponseGetProjects>(`/api/projects/?page=${n}`)
+        const response = await api.get<IResponseGetProjects>(`/api/projects/`)
         // console.log(response.data)
 
         return response.data
@@ -51,7 +51,7 @@ export async function getProjects(n: number) {
 }
 
 export default async function ShowcaseFlex(){
-    const data = await getProjects(1)
+    const data = await getProjects()
     const projects : IProject[] = data.results
     const nextPage = data.next
     const previousPage = data.previous
